@@ -23,7 +23,7 @@ export default function HomePage() {
         <FinalCta />
       </main>
       <Footer />
-      <StickyCta href="/#formaty" label="Обрати формат" title="Від 50 €" sub="Zoom, 30–120 хв" />
+      <StickyCta href="/#formaty" label="Обрати формат" title="Від 30 €" sub="Zoom, 30–90 хв" />
     </>
   );
 }
