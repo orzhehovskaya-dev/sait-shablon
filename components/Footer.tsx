@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <div className="footer__brand">{site.brand}</div>
             <p style={{ color: "var(--grey-2)", maxWidth: "26em", margin: 0 }}>
-              {site.person}. Особистий бренд, контент, медійність та монетизація.
+              {site.person}. {site.hero.who}
             </p>
           </div>
           <ul aria-label="Послуги">

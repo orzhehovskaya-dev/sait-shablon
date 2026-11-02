@@ -65,13 +65,13 @@ export function QuestionnaireForm({ token, serviceSlug, extended, onDone }: { to
                   error={errors.questions}
                   onChange={(v) => set("questions", v)}
                   multiline
-                  hint={service.slug === "konsultatsiia" ? "До трьох головних запитань" : undefined}
+                  hint={service.slug === "posluga-2" ? "До трьох головних запитань" : undefined}
                 />
               </fieldset>
 
               {service.extendedForm && (
                 <fieldset>
-                  <legend>Для стратегії</legend>
+                  <legend>Додаткові питання</legend>
                   <Field id="products" label="Які продукти або послуги зараз продаєш?" value={form.products} error={errors.products} onChange={(v) => set("products", v)} multiline />
                   <Field id="averageCheck" label="Який середній чек?" value={form.averageCheck} error={errors.averageCheck} onChange={(v) => set("averageCheck", v)} placeholder="Наприклад, 3 000 грн" />
                   <Field id="acquisitionProblems" label="Які основні проблеми із залученням клієнтів?" value={form.acquisitionProblems} error={errors.acquisitionProblems} onChange={(v) => set("acquisitionProblems", v)} multiline />
